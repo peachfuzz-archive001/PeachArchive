@@ -1,1 +1,22 @@
 
+/* PeachArchive - Global styles */
+
+:root {
+  --accent: #EF8F76;
+  --background: #171313;
+  --surface: #241e1d;
+  --text: #f7eeee;
+  --muted: #ad9e9b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--text);
+  font-family: Arial, sans-serif;
+}
+
