@@ -24,4 +24,25 @@ h1 {
   color: var(--accent);
 }
 
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 20px;
+}
 
+.app-header h1 {
+  margin: 0;
+  font-size: 24px;
+  color: var(--accent);
+}
+
+.search-button {
+  background: var(--surface);
+  color: var(--text);
+  border: none;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  font-size: 24px;
+}
