@@ -1,12 +1,11 @@
-
-{
-  "name": "PeachArchive",
+ {
+  "name": "Peach Archive",
   "short_name": "PeachArchive",
   "description": "Your personal media archive",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
-  "background_color": "#00FF13",
+  "background_color": "#171313",
   "theme_color": "#171313",
   "icons": [
     {
@@ -21,4 +20,3 @@
     }
   ]
 }
-
