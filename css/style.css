@@ -37,7 +37,7 @@ svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width:
 }
 .wordmark { display: inline-flex; flex-direction: column; align-items: flex-start; gap: 0; color: var(--accent); text-decoration: none; font-weight: 760; letter-spacing: -.8px; line-height: .82; }
 .wordmark-line { display: flex; align-items: center; height: 27px; font-size: 25px; }
-.wordmark-mark { width: 25px; height: 25px; object-fit: contain; margin: 0 -3px; }
+.wordmark-mark { width: 25px; height: 25px; object-fit: contain; margin: 0 -3.5px; }
 .wordmark-second { font-size: 24px; line-height: 1; }
 .icon-button {
   width: 43px; height: 43px; border: 0; border-radius: 50%;
