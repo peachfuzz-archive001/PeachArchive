@@ -141,3 +141,523 @@ svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width:
   .category-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
   .bottom-nav { left: 50%; right: auto; width: min(100%, 720px); transform: translateX(-50%); border-left: 1px solid var(--line); border-right: 1px solid var(--line); border-radius: 15px 15px 0 0; }
 }
+
+/* =====================================
+   PEACHARCHIVE DESKTOP EXPERIENCE
+   Desktop breakpoint: 1100px
+   ===================================== */
+
+.desktop-app {
+  display: none;
+}
+
+@media (min-width: 1100px) {
+  :root {
+    --text: #F3D8CD;
+  }
+
+  body {
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  .topbar,
+  .page-content,
+  .bottom-nav {
+    display: none !important;
+  }
+
+  .desktop-app {
+    display: grid;
+    grid-template-columns: 252px minmax(0, 1fr);
+    min-height: 100vh;
+    background: var(--background);
+  }
+
+  /* Sidebar */
+
+  .desktop-sidebar {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    min-height: 650px;
+    padding: 32px 18px 20px;
+    display: flex;
+    flex-direction: column;
+    background: #211917;
+    border-right: 1px solid var(--line);
+  }
+
+  .desktop-wordmark {
+    margin: 0 0 42px 13px;
+  }
+
+  .desktop-wordmark .wordmark-line {
+    height: 35px;
+    font-size: 33px;
+  }
+
+  .desktop-wordmark .wordmark-mark {
+    width: 32px;
+    height: 32px;
+  }
+
+  .desktop-wordmark .wordmark-second {
+    font-size: 32px;
+  }
+
+  .desktop-navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .desktop-nav-label {
+    margin: 10px 10px 9px;
+    color: var(--accent);
+    font-size: 10px;
+    font-weight: 760;
+    letter-spacing: 1.4px;
+  }
+
+  .desktop-nav-item {
+    width: 100%;
+    min-height: 47px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 0 15px;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    background: transparent;
+    color: #C4AAA0;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 560;
+    cursor: pointer;
+    transition: background .18s, color .18s;
+  }
+
+  .desktop-nav-item svg {
+    width: 21px;
+    height: 21px;
+    color: var(--accent);
+  }
+
+  .desktop-nav-symbol {
+    width: 21px;
+    color: var(--accent);
+    font-size: 23px;
+    line-height: 1;
+    text-align: center;
+  }
+
+  .desktop-nav-item:hover,
+  .desktop-category-item:hover {
+    background: #30231f;
+    color: var(--text);
+  }
+
+  .desktop-nav-item.active {
+    background: var(--accent);
+    color: #291a16;
+    font-weight: 750;
+  }
+
+  .desktop-nav-item.active svg,
+  .desktop-nav-item.active .desktop-nav-symbol {
+    color: #291a16;
+  }
+
+  .desktop-nav-divider {
+    height: 1px;
+    margin: 17px 0 13px;
+    background: var(--line);
+  }
+
+  .desktop-category-item {
+    min-height: 39px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0 12px;
+    border: 1px solid transparent;
+    border-radius: 11px;
+    background: transparent;
+    color: #C4AAA0;
+    text-align: left;
+    font-size: 13px;
+    cursor: pointer;
+  }
+
+  .desktop-category-item svg {
+    width: 19px;
+    height: 19px;
+    color: var(--accent);
+  }
+
+  .desktop-category-gif {
+    width: 19px;
+    color: var(--accent);
+    font-size: 12px;
+    font-weight: 800;
+    text-align: center;
+  }
+
+  .desktop-sidebar-footer {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    margin-top: auto;
+    padding: 17px 8px 3px;
+    border-top: 1px solid var(--line);
+  }
+
+  .desktop-footer-lock {
+    width: 37px;
+    height: 37px;
+    flex: 0 0 37px;
+    display: grid;
+    place-items: center;
+    border-radius: 11px;
+    background: #392923;
+    color: var(--accent);
+  }
+
+  .desktop-sidebar-footer strong,
+  .desktop-sidebar-footer span {
+    display: block;
+  }
+
+  .desktop-sidebar-footer strong {
+    font-size: 11px;
+    color: var(--text);
+  }
+
+  .desktop-sidebar-footer div span {
+    margin-top: 4px;
+    color: var(--muted);
+    font-size: 10px;
+  }
+
+  /* Main area and header */
+
+  .desktop-main {
+    min-width: 0;
+  }
+
+  .desktop-header {
+    height: 94px;
+    padding: 0 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    background: var(--header);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .desktop-search {
+    width: min(100%, 850px);
+    height: 54px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 0 19px;
+    border: 1px solid #5A4037;
+    border-radius: 30px;
+    background: #261D1A;
+    color: #A88B80;
+    font-size: 14px;
+    cursor: text;
+  }
+
+  .desktop-search svg {
+    color: var(--accent);
+    width: 23px;
+    height: 23px;
+  }
+
+  .desktop-search kbd {
+    margin-left: auto;
+    padding: 4px 8px;
+    border: 1px solid #594239;
+    border-radius: 6px;
+    color: var(--muted);
+    font-size: 11px;
+  }
+
+  .desktop-profile {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    border: 0;
+    background: transparent;
+    color: var(--text);
+    font-size: 13px;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+
+  .desktop-avatar {
+    width: 41px;
+    height: 41px;
+    display: grid;
+    place-items: center;
+    border: 2px solid #80594C;
+    border-radius: 50%;
+    background: #50352D;
+    color: var(--accent-soft);
+  }
+
+  .desktop-profile-chevron {
+    color: var(--accent);
+    font-size: 19px;
+  }
+
+  /* Content */
+
+  .desktop-content {
+    width: min(100%, 1700px);
+    margin: 0 auto;
+    padding: 22px 24px 65px;
+  }
+
+  .desktop-hero {
+    position: relative;
+    min-height: 330px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border: 1px solid #594037;
+    border-radius: 17px;
+    background: #30211f;
+  }
+
+  .desktop-hero-art {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    background:
+      linear-gradient(90deg, #211714 0%, #30201d 34%, transparent 100%),
+      linear-gradient(0deg, #241817 0%, transparent 55%),
+      linear-gradient(125deg, #69423b, #B76F59 52%, #E69A70);
+  }
+
+  .hero-sun {
+    position: absolute;
+    width: 125px;
+    height: 125px;
+    top: 48px;
+    right: 24%;
+    border-radius: 50%;
+    background: #F2B09B;
+    opacity: .75;
+    filter: blur(2px);
+    box-shadow: 0 0 65px #EF8F76;
+  }
+
+  .hero-mountain {
+    position: absolute;
+    bottom: 0;
+    width: 75%;
+    height: 72%;
+    clip-path: polygon(0 100%, 23% 24%, 37% 57%, 60% 4%, 78% 52%, 100% 20%, 100% 100%);
+  }
+
+  .hero-mountain-back {
+    right: -5%;
+    background: #70443E;
+    opacity: .8;
+  }
+
+  .hero-mountain-front {
+    right: 8%;
+    height: 52%;
+    background: #392A27;
+    opacity: .85;
+  }
+
+  .hero-forest {
+    position: absolute;
+    inset: 65% 0 0;
+    background:
+      linear-gradient(0deg, #1C1715, transparent),
+      repeating-linear-gradient(100deg, transparent 0 45px, #29201D 46px 60px, transparent 61px 92px);
+  }
+
+  .desktop-hero-content {
+    position: relative;
+    z-index: 1;
+    padding: 42px;
+    max-width: 630px;
+  }
+
+  .desktop-hero-kicker {
+    margin: 0 0 13px;
+    color: var(--accent);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+  }
+
+  .desktop-hero h1 {
+    margin: 0;
+    color: var(--text);
+    font-size: clamp(38px, 4vw, 57px);
+    line-height: 1.02;
+    letter-spacing: -2px;
+  }
+
+  .desktop-hero-content > p:not(.desktop-hero-kicker) {
+    margin: 13px 0 21px;
+    color: #D0AFA2;
+    font-size: 14px;
+  }
+
+  .desktop-primary-button {
+    min-height: 47px;
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    padding: 0 20px;
+    border: 0;
+    border-radius: 13px;
+    background: var(--accent);
+    color: #291A16;
+    font-size: 13px;
+    font-weight: 760;
+    cursor: pointer;
+    transition: transform .15s, filter .15s;
+  }
+
+  .desktop-primary-button:hover {
+    filter: brightness(1.07);
+    transform: translateY(-2px);
+  }
+
+  .desktop-primary-button svg {
+    width: 18px;
+    height: 18px;
+    stroke-width: 2.3;
+  }
+
+  .desktop-hero-index {
+    position: absolute;
+    right: 25px;
+    bottom: 20px;
+    color: #D0AFA2;
+    font-size: 11px;
+    letter-spacing: 2px;
+  }
+
+  /* Shelves */
+
+  .desktop-shelf {
+    margin-top: 36px;
+  }
+
+  .desktop-section-heading {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    margin-bottom: 16px;
+  }
+
+  .desktop-section-heading .section-kicker {
+    margin-bottom: 5px;
+  }
+
+  .desktop-section-heading h2 {
+    margin: 0;
+    color: var(--text);
+    font-size: 25px;
+    letter-spacing: -.6px;
+  }
+
+  .desktop-view-all {
+    padding: 5px 0;
+    border: 0;
+    background: transparent;
+    color: var(--accent);
+    font-size: 13px;
+    cursor: pointer;
+  }
+
+  .desktop-view-all span {
+    margin-left: 5px;
+    font-size: 17px;
+  }
+
+  .desktop-empty-shelf {
+    min-height: 105px;
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    padding: 20px 23px;
+    border: 1px dashed #594239;
+    border-radius: 14px;
+    background: #201A18;
+  }
+
+  .desktop-shelf-icon {
+    width: 46px;
+    height: 46px;
+    flex: 0 0 46px;
+    display: grid;
+    place-items: center;
+    border-radius: 13px;
+    background: #392923;
+    color: var(--accent);
+  }
+
+  .desktop-shelf-icon svg {
+    width: 23px;
+    height: 23px;
+  }
+
+  .desktop-empty-shelf strong {
+    display: block;
+    color: var(--text);
+    font-size: 14px;
+  }
+
+  .desktop-empty-shelf p {
+    margin: 5px 0 0;
+    color: var(--muted);
+    font-size: 12px;
+  }
+
+  .desktop-collections {
+    margin-bottom: 20px;
+  }
+
+  /* Desktop dialogs */
+
+  .bottom-sheet {
+    left: 50%;
+    right: auto;
+    bottom: 50%;
+    width: min(440px, calc(100vw - 40px));
+    padding: 28px;
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    transform: translate(-50%, 50%);
+  }
+
+  .search-panel {
+    top: 110px;
+    bottom: auto;
+    left: 50%;
+    right: auto;
+    width: min(650px, calc(100vw - 60px));
+    padding: 25px;
+    border: 1px solid var(--line);
+    border-radius: 19px;
+    transform: translateX(-50%);
+  }
+
+  .toast {
+    bottom: 25px;
+  }
+}
