@@ -661,3 +661,69 @@ svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width:
     bottom: 25px;
   }
 }
+
+/* Compact desktop windows */
+
+@media (hover: hover) and (pointer: fine) and (max-width: 900px) {
+  .desktop-app {
+    grid-template-columns: 76px minmax(0, 1fr);
+  }
+
+  .desktop-sidebar {
+    padding: 24px 8px 16px;
+  }
+
+  .desktop-wordmark {
+    display: none;
+  }
+
+  .desktop-nav-label,
+  .desktop-nav-item:not(.active),
+  .desktop-category-item,
+  .desktop-sidebar-footer div {
+    display: none;
+  }
+
+  .desktop-nav-item {
+    justify-content: center;
+    padding: 0;
+    font-size: 0;
+  }
+
+  .desktop-nav-item svg,
+  .desktop-nav-symbol {
+    font-size: 22px;
+  }
+
+  .desktop-sidebar-footer {
+    justify-content: center;
+    padding: 15px 0 0;
+  }
+
+  .desktop-header {
+    height: 76px;
+    padding: 0 16px;
+    gap: 12px;
+  }
+
+  .desktop-profile-name,
+  .desktop-profile-chevron {
+    display: none;
+  }
+
+  .desktop-content {
+    padding: 18px 16px 40px;
+  }
+
+  .desktop-hero {
+    min-height: 280px;
+  }
+
+  .desktop-hero-content {
+    padding: 25px;
+  }
+
+  .desktop-hero h1 {
+    font-size: 38px;
+  }
+}
