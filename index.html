@@ -36,6 +36,159 @@
       <svg><use href="#i-search"/></svg>
     </button>
   </header>
+  <!-- Desktop-only interface -->
+<div class="desktop-app">
+  <aside class="desktop-sidebar">
+    <a class="wordmark desktop-wordmark" href="#" aria-label="Peach Archive home">
+      <span class="wordmark-line">
+        <span>Pe</span><img src="assets/logos/lock-logo.svg" alt="" class="wordmark-mark"><span>ch</span>
+      </span>
+      <span class="wordmark-second">Archive</span>
+    </a>
+
+    <nav class="desktop-navigation" aria-label="Desktop navigation">
+      <p class="desktop-nav-label">LIBRARY</p>
+
+      <button class="desktop-nav-item active" type="button" data-nav="Discovery">
+        <svg><use href="#i-home"/></svg> Discovery
+      </button>
+      <button class="desktop-nav-item" type="button" data-open-search>
+        <svg><use href="#i-search"/></svg> Search
+      </button>
+      <button class="desktop-nav-item" type="button" data-nav="Collections">
+        <svg><use href="#i-folder"/></svg> Collections
+      </button>
+      <button class="desktop-nav-item" type="button" data-nav="Favorites">
+        <span class="desktop-nav-symbol">♡</span> Favorites
+      </button>
+      <button class="desktop-nav-item" type="button" data-nav="Recent">
+        <span class="desktop-nav-symbol">◷</span> Recent
+      </button>
+
+      <div class="desktop-nav-divider"></div>
+      <p class="desktop-nav-label">MANAGE</p>
+
+      <button class="desktop-nav-item" type="button" data-nav="File Manager">
+        <svg><use href="#i-folder"/></svg> File Manager
+      </button>
+      <button class="desktop-nav-item" type="button" data-nav="Transfers">
+        <span class="desktop-nav-symbol">↕</span> Transfers
+      </button>
+      <button class="desktop-nav-item" type="button" data-nav="Settings">
+        <span class="desktop-nav-symbol">⚙</span> Settings
+      </button>
+
+      <div class="desktop-nav-divider"></div>
+      <p class="desktop-nav-label">CATEGORIES</p>
+
+      <button class="desktop-category-item" type="button" data-not-ready="Screenshots">
+        <svg><use href="#i-image"/></svg> Screenshots
+      </button>
+      <button class="desktop-category-item" type="button" data-not-ready="GIFs">
+        <span class="desktop-category-gif">GIF</span> GIFs
+      </button>
+      <button class="desktop-category-item" type="button" data-not-ready="Recipes">
+        <span class="desktop-category-gif">✣</span> Recipes
+      </button>
+    </nav>
+
+    <div class="desktop-sidebar-footer">
+      <span class="desktop-footer-lock"><svg><use href="#i-lock"/></svg></span>
+      <div>
+        <strong>Your archive, your fuzz.</strong>
+        <span>A little place of your own.</span>
+      </div>
+    </div>
+  </aside>
+
+  <div class="desktop-main">
+    <header class="desktop-header">
+      <label class="desktop-search" data-open-search>
+        <svg><use href="#i-search"/></svg>
+        <span>Search your archive...</span>
+        <kbd>⌘ K</kbd>
+      </label>
+
+      <button class="desktop-profile" type="button" data-nav="Account" aria-label="Account">
+        <span class="desktop-avatar"><svg><use href="#i-user"/></svg></span>
+        <span class="desktop-profile-name">My Archive</span>
+        <span class="desktop-profile-chevron">⌄</span>
+      </button>
+    </header>
+
+    <main class="desktop-content">
+      <section class="desktop-hero">
+        <div class="desktop-hero-art" aria-hidden="true">
+          <div class="hero-sun"></div>
+          <div class="hero-mountain hero-mountain-back"></div>
+          <div class="hero-mountain hero-mountain-front"></div>
+          <div class="hero-forest"></div>
+        </div>
+        <div class="desktop-hero-content">
+          <p class="desktop-hero-kicker">YOUR PERSONAL ARCHIVE</p>
+          <h1>A world worth<br>keeping.</h1>
+          <p>Your favorite things, all tucked away in one place.</p>
+          <button class="desktop-primary-button" type="button" data-open-add>
+            <svg><use href="#i-plus"/></svg>
+            Add to your archive
+          </button>
+        </div>
+        <span class="desktop-hero-index">01 / 01</span>
+      </section>
+
+      <section class="desktop-shelf">
+        <div class="desktop-section-heading">
+          <div>
+            <p class="section-kicker">PICK UP WHERE YOU LEFT OFF</p>
+            <h2>Continue Watching</h2>
+          </div>
+          <button class="desktop-view-all" type="button" data-nav="Recent">View all <span>→</span></button>
+        </div>
+        <div class="desktop-empty-shelf">
+          <span class="desktop-shelf-icon"><svg><use href="#i-video"/></svg></span>
+          <div>
+            <strong>Nothing playing just yet</strong>
+            <p>Videos you open will find their place here.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="desktop-shelf">
+        <div class="desktop-section-heading">
+          <div>
+            <p class="section-kicker">FRESHLY TUCKED AWAY</p>
+            <h2>Recently Added</h2>
+          </div>
+          <button class="desktop-view-all" type="button" data-nav="Recent">View all <span>→</span></button>
+        </div>
+        <div class="desktop-empty-shelf">
+          <span class="desktop-shelf-icon"><svg><use href="#i-lock"/></svg></span>
+          <div>
+            <strong>Your archive is waiting for its first treasures</strong>
+            <p>When you add something, you'll find it waiting here.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="desktop-shelf desktop-collections">
+        <div class="desktop-section-heading">
+          <div>
+            <p class="section-kicker">MADE BY YOU</p>
+            <h2>Your Collections</h2>
+          </div>
+          <button class="desktop-view-all" type="button" data-nav="Collections">View all <span>→</span></button>
+        </div>
+        <div class="desktop-empty-shelf">
+          <span class="desktop-shelf-icon"><svg><use href="#i-folder"/></svg></span>
+          <div>
+            <strong>Your little corners are waiting</strong>
+            <p>Create collections to organize the things you save.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</div>
 
   <main class="page-content">
     <section class="welcome">
