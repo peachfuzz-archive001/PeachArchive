@@ -55,7 +55,7 @@ svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width:
 .section-heading { display: flex; justify-content: space-between; align-items: end; margin-bottom: 14px; }
 .section-heading h2 { margin: 0; font-size: 21px; letter-spacing: -.45px; }
 .section-kicker { margin-bottom: 5px; font-size: 9px; letter-spacing: 1.15px; }
-.section-note { color: #8f807b; font-size: 11px; padding-bottom: 3px; }
+.section-note { color: #ad9e9b; font-size: 11px; padding-bottom: 3px; }
 .category-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
 .category-card {
   min-height: 112px; padding: 14px; border: 1px solid #382b28; border-radius: 15px;
@@ -77,14 +77,14 @@ svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width:
 .empty-copy { min-width: 0; flex: 1; }
 .empty-copy h3 { margin: 0; font-size: 13px; font-weight: 680; }
 .empty-copy p { margin: 4px 0 0; color: var(--muted); font-size: 11px; line-height: 1.4; }
-.empty-plus { color: #b99a8e; }
+.empty-plus { color: #ad9e9b; }
 .empty-plus svg { width: 18px; height: 18px; }
 .recent-section { margin-top: 29px; }
 .empty-recent {
   min-height: 105px; display: flex; flex-direction: column; align-items: center; justify-content: center;
-  gap: 8px; padding: 18px; border: 1px dashed #493832; border-radius: 15px; color: #8f7d76; text-align: center;
+  gap: 8px; padding: 18px; border: 1px dashed #493832; border-radius: 15px; color: #ad9e9b; text-align: center;
 }
-.empty-recent svg { color: #b47c69; width: 23px; height: 23px; }
+.empty-recent svg { color: #EF8F76; width: 23px; height: 23px; }
 .empty-recent p { max-width: 250px; margin: 0; font-size: 12px; line-height: 1.45; }
 .bottom-nav {
   position: fixed; z-index: 10; left: 0; right: 0; bottom: 0;
@@ -129,7 +129,7 @@ svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width:
 .toast {
   position: fixed; z-index: 30; left: 50%; bottom: calc(var(--nav-height) + env(safe-area-inset-bottom) + 17px);
   transform: translate(-50%, 12px); max-width: calc(100vw - 36px); padding: 10px 15px;
-  border: 1px solid #594239; border-radius: 12px; background: #302522; color: #f4ded5;
+  border: 1px solid #594239; border-radius: 12px; background: #302522; color: #F3D8CD;
   font-size: 12px; text-align: center; opacity: 0; pointer-events: none; transition: opacity .2s, transform .2s;
 }
 .toast.show { opacity: 1; transform: translate(-50%, 0); }
