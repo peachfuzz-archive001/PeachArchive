@@ -1,4 +1,18 @@
 (() => {
+    // Keep the homepage hidden until authentication is implemented.
+  document.body.classList.add("auth-locked");
+
+  const loginForm = document.querySelector("#login-form");
+  const loginMessage = document.querySelector("#login-message");
+
+  loginForm?.addEventListener("submit", event => {
+    event.preventDefault();
+
+    if (loginMessage) {
+      loginMessage.textContent =
+        "Account authentication hasn't been connected to the backend yet.";
+    }
+  });
   const toast = document.querySelector(".toast");
   let toastTimer;
 
